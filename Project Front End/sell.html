@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Page</title>
+    <link rel="stylesheet" href="sell.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sell Your Product</h1>
+        <form id="sell-form" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact:</label>
+                <input type="tel" id="contact" name="contact" pattern="[0-9]{10}" required>
+                <small>Enter 10 digit phone number</small>
+            </div>
+            <div class="form-group">
+                <label for="productName">Product Name:</label>
+                <input type="text" id="productName" name="productName" required>
+            </div>
+            <div class="form-group">
+                <label for="productDescription">Product Description:</label>
+                <textarea id="productDescription" name="productDescription" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="productImage">Product Image:</label>
+                <input type="file" id="productImage" name="productImage" accept="image/*">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
